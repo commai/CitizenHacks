@@ -3,7 +3,7 @@
 
 (function(){
 	chrome.storage.sync.get(['blurAmount'], function(values){
-		window.imageBlurOpacityAmount = values.blurAmount || 6;
+		window.imageBlurOpacityAmount = 5;
 	});
 
 	function blur(image) {
@@ -36,11 +36,11 @@
 
 	function reveal(e) {
 		if (window.imageBlurState === "blurred") {
-		    if (e.shiftKey) {
+		    if (e.ctrlKey) {
 				e.preventDefault();
 				e.stopPropagation();
 		        show(e.target);
-				}
+			}
 		}
 	}
 
@@ -72,7 +72,7 @@
 			}
 		});
 	}
-	
+
 	function addMaskDivToPage(){
 		window.maskDivId = "imageBlur-mask-div";
 		const maskDiv = document.createElement("div");
@@ -109,4 +109,7 @@
 			}
 		}
 	);
+
+
+
 })()
