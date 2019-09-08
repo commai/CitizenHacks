@@ -1,27 +1,37 @@
 ﻿{
-  	"name": "PrivaSeaable",
+  	"name": "PrivaSee",
 	"version": "1.0",
-	"description": "Adds custom edits to text on screen to protect your privacy",
+	"description": "Manipulates the text on your screen to protect your privacy from shoulder surfers",
 	"manifest_version": 2,
 	"browser_action":
 	{
+			"default_title": "PrivaSee",
 			"default_popup": "UI.html",
-			"default_icon":"PrivaSeeable2.png"
+			"default_icon": "assets/Private.png"
 	},
 	"content_scripts": [
 		{
 			"matches": [
-				"https://*/*",
-				"https://*/*"
+				"<all_urls>"
 			],
 			"js":[
 				"content.js"
 			],
-			"run_at":"document_end"
+			"css": [
+        		"styles.css"
+      		],
+			"run_at":"document_start"
 		}
 	],
 
 	"icons": {
-		"48":"PrivaSeeable2.png"
-	}
+		"48":"assets/Private.png"
+	},
+
+	"permissions": [
+    	"activeTab",
+   		"storage",
+    	"tabs",
+    	"*://*/*"
+  	],
 }
