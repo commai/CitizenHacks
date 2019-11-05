@@ -1,6 +1,7 @@
 # CitizenHacks
 
 ### Inspiration
+---
 We were inspired by our personal experiences with using our screens in public settings, and we wanted to have a fun/funny idea that we felt passionate about because it was quirky and unique to us.
 
 ### What it does
