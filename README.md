@@ -7,7 +7,7 @@ We were inspired by our personal experiences with using our screens in public se
 Our chrome extension manipulates the text on your web page to make it harder for shoulder surfers to see what is on your screen, by adding filters to it.
 
 # How we built it
-javascript, html, css.
+Javascript, HTML/CSS.
 
 # Challenges we ran into
 Coming up with an idea, that was doable and solved a privacy problem. We were not familiar with building chrome extensions, and the vast majority of the knowledge needed to make our project was learnt during the hackathon. We relied, on our core computer science skills and knowledge and applied them here. We had some experience with making basic websites, but some things we wanted to do in an extension were different/more complicated for security reasons and we had to overcome those obstacles.
