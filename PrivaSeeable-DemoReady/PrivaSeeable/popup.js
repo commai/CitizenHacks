@@ -20,3 +20,4 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('blur').addEventListener('click', blur, false);
   document.getElementById('unblur').addEventListener('click', blur, false);
 });
+
